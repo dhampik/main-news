@@ -9,6 +9,7 @@ AllCops:
     - '**/Rakefile'
     - '**/config.ru'
   Exclude:
+    - 'Capfile'
     - 'Gemfile'
     - 'config/environments/*'
     - 'db/**/*'

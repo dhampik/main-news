@@ -1,6 +1,6 @@
 = form_for @news, url: {action: "upsert"}, method: :put, html: {multipart: true, class: 'news-form'} do |f|
   - flash.each do |type, message|
-    %p{class: type}
+    %p{ class: type }
       =  message
 
   .field
