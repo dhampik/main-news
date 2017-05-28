@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class DefaultNewsService
   def fetch
     News.new(

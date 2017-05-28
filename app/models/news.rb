@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class News < ApplicationRecord
   validates_presence_of :title, :description
   validate :published_until_didnt_come
