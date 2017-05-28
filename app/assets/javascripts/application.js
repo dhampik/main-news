@@ -11,5 +11,5 @@
 // about supported directives.
 //
 //= require rails-ujs
-//= require turbolinks
+//= require moment/min/moment-with-locales
 //= require_tree .

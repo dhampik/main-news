@@ -1,0 +1,19 @@
+= form_for @news, url: {action: "upsert"}, method: :put, html: {multipart: true, class: 'news-form'} do |f|
+  - flash.each do |type, message|
+    %p{class: type}
+      =  message
+
+  .field
+    = f.label :title, class: 'field-label'
+    .field-error= f.object.errors[:title].join(', ')
+    = f.text_area :title, class: 'field-input'
+  .field
+    = f.label :description, class: 'field-label'
+    .field-error= f.object.errors[:description].join(', ')
+    = f.text_area :description, class: 'field-input'
+  .field
+    = f.label :published_until, class: 'field-label'
+    .field-error= f.object.errors[:published_until].join(', ')
+    = f.datetime_select :published_until, {}, { class: 'field-input' }
+  .actions
+    = f.submit nil, class: 'submit'

@@ -1,5 +1,8 @@
 {
   "name": "main-news",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "moment": "^2.18.1",
+    "normalize.css": "^7.0.0"
+  }
 }

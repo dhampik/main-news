@@ -1,0 +1,26 @@
+!!!
+%html
+  %head
+    %title
+      - if content_for?(:title)
+        = raw "Главная новость &mdash; #{content_for(:title)}"
+      - else
+        = raw 'Главная новость'
+
+    %meta{ charset: 'utf-8' }
+    %meta{ name: 'viewport', content: 'width=device-width, initial-scale=1.0' }
+
+    = csrf_meta_tags
+
+    %link{ href: '/favicon.png', rel: 'icon', type: 'image/x-icon' }
+
+    = stylesheet_link_tag 'application', media: 'all'
+
+  %body
+    .site-container
+      = yield
+
+    %footer.site-footer
+      .copyright= copyright_info
+
+    = javascript_include_tag 'application'

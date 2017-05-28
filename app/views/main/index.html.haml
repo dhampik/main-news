@@ -1,0 +1,9 @@
+- title(sanitize @news.title)
+
+.news-container
+  %h1.news-title
+    = sanitize @news.title
+  %p.news-description
+    = sanitize @news.description
+  .news-date{ data: {timestamp: @news.created_at.to_i} }
+    = I18n.l @news.created_at, format: :long

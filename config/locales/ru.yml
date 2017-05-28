@@ -1,0 +1,7 @@
+ru:
+  news:
+    upsert:
+      success: 'Новость успешно опубликована!'
+  errors:
+    messages:
+      in_past: 'не может быть в прошлом'

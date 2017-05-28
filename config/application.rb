@@ -14,5 +14,16 @@ module MainNews
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
+
+    # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
+    config.i18n.load_path += Dir[Rails.root.join('config', 'locales', '**', '*.{rb,yml}')]
+    config.i18n.default_locale = :ru
+    config.i18n.fallbacks = [:ru]
+
+    # rails-i18n locales to load
+    config.i18n.available_locales = [:ru]
+
+    # autoload services
+    config.autoload_paths << "#{Rails.root}/app/services"
   end
 end

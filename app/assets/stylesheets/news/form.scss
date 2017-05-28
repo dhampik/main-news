@@ -1,0 +1,45 @@
+.news-form {
+  max-width: 75%;
+  background-color: rgba(255,255,255,0.3);
+  border-radius: 0 2em;
+  padding: 2em;
+}
+
+.notice {
+  color: darkblue;
+}
+
+.field-label {
+  display: block;
+  font-size: 2em;
+}
+
+textarea.field-input,
+input.field-input {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.field-input {
+  font-size: 2em;
+  border: 1px solid gray;
+  padding: 15px;
+  background: rgba(255,255,255,0.5);
+  margin: 0 0 10px 0;
+}
+
+.field-error {
+  color: red;
+  font-size: 12px;
+}
+
+.field_with_errors .field-input {
+  border-color: red;
+}
+
+.submit {
+  background: lightgreen;
+  font-size: 2em;
+  border: 1px solid gray;
+  padding: 15px;
+}

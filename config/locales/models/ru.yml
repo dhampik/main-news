@@ -1,0 +1,17 @@
+ru:
+  activerecord:
+    models:
+      news:
+        zero: 'новостей'
+        one: 'новость'
+        few: 'новости'
+        many: 'новостей'
+        other: 'новости'
+    attributes:
+      news:
+        title: 'Заголовок'
+        description: 'Описание'
+        created_at: 'Дата создания'
+        updated_at: 'Дата обновления'
+        published_until: 'Дата деактивации (UTC)'
+        link: 'Ссылка'
