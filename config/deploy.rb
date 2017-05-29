@@ -36,15 +36,3 @@ set :rvm_ruby_version, '2.4.1'
 
 # Default value for keep_releases is 5
 set :keep_releases, 7
-
-namespace :deploy do
-  desc 'Restart application'
-  task :restart do
-    on roles(:app), in: :sequence, wait: 5 do
-      # Your restart mechanism here, for example:
-      execute :touch, release_path.join('tmp/restart.txt')
-    end
-  end
-
-  after :publishing, :restart
-end
