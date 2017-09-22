@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
-# config valid only for Capistrano 3.8.1
-lock '3.8.1'
+# config valid only for Capistrano 3.9.1
+lock '3.9.1'
 
 set :application, 'glavnaya-novost.ru'
 set :repo_url, 'git@gitlab.dhampik.ru:dhampik/main-news.git'
@@ -32,7 +32,7 @@ set :linked_dirs, %w[log tmp/pids tmp/cache tmp/sockets public/system]
 # set :default_env, { path: "/opt/ruby/bin:$PATH" }
 
 # RVM ruby version to use
-set :rvm_ruby_version, '2.4.1'
+set :rvm_ruby_version, '2.4.2'
 
 # Default value for keep_releases is 5
 set :keep_releases, 7

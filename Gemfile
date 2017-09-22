@@ -1,6 +1,8 @@
+# frozen_string_literal: true
+
 source 'https://rubygems.org'
 
-ruby '2.4.1'
+ruby '2.4.2'
 
 git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?('/')
@@ -8,7 +10,7 @@ git_source(:github) do |repo_name|
 end
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '5.1.1'
+gem 'rails', '5.1.4'
 # Locale data for rails
 gem 'rails-i18n', '5.0.4'
 # Use sqlite3 as the database for Active Record
@@ -18,12 +20,12 @@ gem 'haml-rails', '1.0.0'
 # Use SCSS for stylesheets
 gem 'sass-rails', '5.0.6'
 # Automatic browser vendor prefixes
-gem 'autoprefixer-rails', '7.1.1'
+gem 'autoprefixer-rails', '7.1.4'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '3.2.0'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-gem 'jbuilder', '2.6.4'
+gem 'jbuilder', '2.7.0'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
@@ -37,12 +39,12 @@ gem 'dotenv-rails', '2.2.1'
 
 group :development, :test do
   # Use Puma as the app server
-  gem 'puma', '3.8.2'
+  gem 'puma', '3.10.0'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'byebug', '9.0.6'
+  gem 'byebug', '9.1.0'
   # Adds support for Capybara system testing and selenium driver
-  gem 'capybara', '2.14.0'
-  gem 'selenium-webdriver', '3.4.0'
+  gem 'capybara', '2.15.1'
+  gem 'selenium-webdriver', '3.5.2'
 end
 
 group :development do
@@ -51,31 +53,32 @@ group :development do
   # Web console
   gem 'web-console', '3.5.1'
   # Better error information
-  gem 'better_errors', '2.1.1'
+  gem 'better_errors', '2.3.0'
   # REPL on errors screen
   gem 'binding_of_caller', '0.7.2'
-  # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
+  # Spring speeds up development by keeping your application running in the background.
+  # Read more: https://github.com/rails/spring
   gem 'spring', '2.0.2'
   # Notify spring about file modifications
   gem 'spring-watcher-listen', '2.0.1'
 
   # n+1 queries detector
-  gem 'bullet', '5.5.1'
+  gem 'bullet', '5.6.1'
 
   # ruby code analyzers
-  gem 'rubocop', '0.49.0', require: false
-  gem 'rails_best_practices', '1.18.1', require: false
-  gem "rubycritic", '3.2.2', require: false
+  gem 'rails_best_practices', '1.19.0', require: false
+  gem 'rubocop', '0.50.0', require: false
+  gem 'rubycritic', '3.2.3', require: false
   # security analizer
-  gem 'brakeman', '3.6.2', require: false
+  gem 'brakeman', '3.7.2', require: false
 
   # haml code analyzer
-  gem 'haml_lint', '0.25.1', require: false
+  gem 'haml_lint', '0.26.0', require: false
 
   # autodeploy
-  gem 'capistrano', '3.8.1'
-  gem 'capistrano-rails', '1.2.3'
-  gem 'capistrano-bundler', '1.2.0'
-  gem 'capistrano-rvm', '0.1.2'
+  gem 'capistrano', '3.9.1'
+  gem 'capistrano-bundler', '1.3.0'
   gem 'capistrano-passenger', '0.2.0'
+  gem 'capistrano-rails', '1.3.0'
+  gem 'capistrano-rvm', '0.1.2'
 end
